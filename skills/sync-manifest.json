@@ -1,0 +1,6 @@
+[
+  { "from": "config/airtable-schema.mjs",              "to": "skills/blog-system-install/table-schema.mjs" },
+  { "from": "docs/templates/voice-doc.md",             "to": "skills/blog-system-install/voice-doc.md" },
+  { "from": "docs/templates/best-practices.md",        "to": "skills/blog-system-install/best-practices.md" },
+  { "from": "docs/templates/business-description.md",  "to": "skills/blog-system-install/business-description.md" }
+]

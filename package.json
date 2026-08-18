@@ -1,0 +1,23 @@
+{
+  "name": "rural-hospitality-seo-blog",
+  "version": "1.1.1",
+  "description": "Reusable Claude Skills for SEO blog writing: install the setup, research and score topics, draft the article in the business's own voice. Center for Rural AI.",
+  "license": "Apache-2.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RuralAI/rural-hospitality-seo-blog.git"
+  },
+  "scripts": {
+    "setup:airtable": "node --env-file=.env.local scripts/setup-airtable.mjs",
+    "sync:skills": "node scripts/sync-skills.mjs",
+    "sync:skills:check": "node scripts/sync-skills.mjs --check",
+    "package:skills": "scripts/package-skill.sh --all",
+    "test": "node --test '**/*.test.mjs'",
+    "embed:fields": "node scripts/embed-field-reference.mjs",
+    "embed:fields:check": "node scripts/embed-field-reference.mjs --check"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
